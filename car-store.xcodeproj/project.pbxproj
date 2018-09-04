@@ -15,6 +15,10 @@
 		32754252213DB5E7000D1155 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32754251213DB5E7000D1155 /* main.m */; };
 		3275425C213DB5E8000D1155 /* car_storeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275425B213DB5E8000D1155 /* car_storeTests.m */; };
 		32754267213DB5E8000D1155 /* car_storeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32754266213DB5E8000D1155 /* car_storeUITests.m */; };
+		32754276213DB647000D1155 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 32754275213DB647000D1155 /* Car.m */; };
+		3275427B213DB739000D1155 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275427A213DB739000D1155 /* Store.m */; };
+		3275427D213DB75C000D1155 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275427C213DB75C000D1155 /* Engine.m */; };
+		3275427F213DB76F000D1155 /* Wheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275427E213DB76F000D1155 /* Wheel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,15 @@
 		32754262213DB5E8000D1155 /* car-storeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "car-storeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32754266213DB5E8000D1155 /* car_storeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = car_storeUITests.m; sourceTree = "<group>"; };
 		32754268213DB5E8000D1155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32754274213DB634000D1155 /* Object+Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object+Car.h"; sourceTree = "<group>"; };
+		32754275213DB647000D1155 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		32754277213DB6B3000D1155 /* Object+Wheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object+Wheel.h"; sourceTree = "<group>"; };
+		32754278213DB6D5000D1155 /* Object+Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object+Engine.h"; sourceTree = "<group>"; };
+		32754279213DB71A000D1155 /* Object+Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object+Store.h"; sourceTree = "<group>"; };
+		3275427A213DB739000D1155 /* Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		3275427C213DB75C000D1155 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		3275427E213DB76F000D1155 /* Wheel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wheel.m; sourceTree = "<group>"; };
+		32A157BA213F285700E39A93 /* NSObject+CarFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CarFactory.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +118,15 @@
 				32754243213DB5E7000D1155 /* AppDelegate.m */,
 				32754245213DB5E7000D1155 /* ViewController.h */,
 				32754246213DB5E7000D1155 /* ViewController.m */,
+				32754274213DB634000D1155 /* Object+Car.h */,
+				32754275213DB647000D1155 /* Car.m */,
+				32754278213DB6D5000D1155 /* Object+Engine.h */,
+				3275427C213DB75C000D1155 /* Engine.m */,
+				32754277213DB6B3000D1155 /* Object+Wheel.h */,
+				3275427E213DB76F000D1155 /* Wheel.m */,
+				32754279213DB71A000D1155 /* Object+Store.h */,
+				3275427A213DB739000D1155 /* Store.m */,
+				32A157BA213F285700E39A93 /* NSObject+CarFactory.h */,
 				32754248213DB5E7000D1155 /* Main.storyboard */,
 				3275424B213DB5E7000D1155 /* Assets.xcassets */,
 				3275424D213DB5E7000D1155 /* LaunchScreen.storyboard */,
@@ -267,7 +289,11 @@
 			files = (
 				32754247213DB5E7000D1155 /* ViewController.m in Sources */,
 				32754252213DB5E7000D1155 /* main.m in Sources */,
+				32754276213DB647000D1155 /* Car.m in Sources */,
+				3275427B213DB739000D1155 /* Store.m in Sources */,
 				32754244213DB5E7000D1155 /* AppDelegate.m in Sources */,
+				3275427F213DB76F000D1155 /* Wheel.m in Sources */,
+				3275427D213DB75C000D1155 /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

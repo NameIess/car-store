@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "Object+Car.h"
+#import "Object+Wheel.h"
+#import "Object+Engine.h"
+#import "Object+Store.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,46 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    Wheel* wheel = [[Wheel alloc] init];
+    wheel.name = @"meshlen";
+    wheel.width = 3.0f;
+    
+    Engine* engine = [[Engine alloc] init];
+    engine.name = @"v8";
+    engine.volume = 30.0f;
+    
+    Car* audi = [[Car alloc] init];
+    
+    audi.name = @"A4";
+    [audi setNumber:1488];
+    [audi setWheel:wheel];
+    [audi setEngine:engine];
+    
+    Car* bmw = [[Car alloc] init];
+    Car* mercedec = [[Car alloc] init];
+    
+    bmw.name = @"x5";
+    [bmw setNumber:1234];
+    [bmw setWheel:wheel];
+    [bmw setEngine:engine];
+    
+    mercedec.name = @"cl1";
+    [mercedec setNumber:4321];
+    [mercedec setWheel:wheel];
+    [mercedec setEngine:engine];
+    
+    Store* store = [[Store alloc] init];
+    
+    NSArray* toSell = [[NSArray alloc] initWithObjects:audi, bmw, mercedec, nil];
+    
+    
+    [store setName:@"car store"];
+    [store setCars:toSell];
+    [store setCarCount:toSell.count];
+    
+    //[store printAllCars];
+    [store printByName:@"cl1"];
+    
     return YES;
 }
 
