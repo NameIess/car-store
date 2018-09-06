@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Object+Car.h"
+#import "Object+Engine.h"
+#import "Object+Wheel.h"
 
 @interface CarFactory : NSObject
-- (void) say: (NSString *) string and: (NSString *) string2;
+- (Car* ) create: (NSString *) name and: (NSInteger) number and: (Engine*) engine and: (Wheel*) wheel and: (BOOL) isNew;
+
+
 @end

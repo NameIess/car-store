@@ -19,6 +19,9 @@
 		3275427B213DB739000D1155 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275427A213DB739000D1155 /* Store.m */; };
 		3275427D213DB75C000D1155 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275427C213DB75C000D1155 /* Engine.m */; };
 		3275427F213DB76F000D1155 /* Wheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3275427E213DB76F000D1155 /* Wheel.m */; };
+		32E5F37F21407A170096744D /* CarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E5F37E21407A170096744D /* CarFactory.m */; };
+		32E5F3822140824C0096744D /* EngineFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E5F3812140824C0096744D /* EngineFactory.m */; };
+		32F574D32141C78000F32ED5 /* WheelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F574D22141C78000F32ED5 /* WheelFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,11 @@
 		3275427C213DB75C000D1155 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
 		3275427E213DB76F000D1155 /* Wheel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wheel.m; sourceTree = "<group>"; };
 		32A157BA213F285700E39A93 /* NSObject+CarFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CarFactory.h"; sourceTree = "<group>"; };
+		32E5F37E21407A170096744D /* CarFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarFactory.m; sourceTree = "<group>"; };
+		32E5F380214082230096744D /* NSObject+EngineFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EngineFactory.h"; sourceTree = "<group>"; };
+		32E5F3812140824C0096744D /* EngineFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineFactory.m; sourceTree = "<group>"; };
+		32F574D12141C73A00F32ED5 /* NSObject+Wheelfactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Wheelfactory.h"; sourceTree = "<group>"; };
+		32F574D22141C78000F32ED5 /* WheelFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +135,16 @@
 				32754279213DB71A000D1155 /* Object+Store.h */,
 				3275427A213DB739000D1155 /* Store.m */,
 				32A157BA213F285700E39A93 /* NSObject+CarFactory.h */,
+				32E5F37E21407A170096744D /* CarFactory.m */,
+				32E5F380214082230096744D /* NSObject+EngineFactory.h */,
+				32E5F3812140824C0096744D /* EngineFactory.m */,
 				32754248213DB5E7000D1155 /* Main.storyboard */,
 				3275424B213DB5E7000D1155 /* Assets.xcassets */,
 				3275424D213DB5E7000D1155 /* LaunchScreen.storyboard */,
 				32754250213DB5E7000D1155 /* Info.plist */,
 				32754251213DB5E7000D1155 /* main.m */,
+				32F574D12141C73A00F32ED5 /* NSObject+Wheelfactory.h */,
+				32F574D22141C78000F32ED5 /* WheelFactory.m */,
 			);
 			path = "car-store";
 			sourceTree = "<group>";
@@ -287,11 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E5F3822140824C0096744D /* EngineFactory.m in Sources */,
 				32754247213DB5E7000D1155 /* ViewController.m in Sources */,
+				32F574D32141C78000F32ED5 /* WheelFactory.m in Sources */,
 				32754252213DB5E7000D1155 /* main.m in Sources */,
 				32754276213DB647000D1155 /* Car.m in Sources */,
 				3275427B213DB739000D1155 /* Store.m in Sources */,
 				32754244213DB5E7000D1155 /* AppDelegate.m in Sources */,
+				32E5F37F21407A170096744D /* CarFactory.m in Sources */,
 				3275427F213DB76F000D1155 /* Wheel.m in Sources */,
 				3275427D213DB75C000D1155 /* Engine.m in Sources */,
 			);

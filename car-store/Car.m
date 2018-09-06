@@ -13,7 +13,7 @@
 
 
 - (void) printInfo {
-    NSLog(@"car info : car name = %@, car number : %d", [self name], [self number]);
+    NSLog(@"car info : car name = %@, car number : %d, car is new : %d", _name, [self number], _isNew);
     [[self engine] printInfo];
     [[self wheel] printInfo];
 }

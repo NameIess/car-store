@@ -11,6 +11,9 @@
 #import "Object+Wheel.h"
 #import "Object+Engine.h"
 #import "Object+Store.h"
+#import "NSObject+CarFactory.h"
+#import "NSObject+EngineFactory.h"
+#import "NSObject+Wheelfactory.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +31,9 @@
     Engine* engine = [[Engine alloc] init];
     engine.name = @"v8";
     engine.volume = 30.0f;
+    
+    EngineFactory* engineFactory = [[EngineFactory alloc] init];
+    Engine* v8 = [engineFactory create:@"v88" and:10.0f];
     
     Car* audi = [[Car alloc] init];
     
@@ -47,7 +53,10 @@
     mercedec.name = @"cl1";
     [mercedec setNumber:4321];
     [mercedec setWheel:wheel];
-    [mercedec setEngine:engine];
+    [mercedec setEngine:v8];
+    
+    WheelFactory* wheelFactory = [[WheelFactory alloc] init];
+    Wheel* factoryWheel = [wheelFactory create:@"factory wheel" width:12.0f];
     
     Store* store = [[Store alloc] init];
     
@@ -60,6 +69,14 @@
     
     //[store printAllCars];
     [store printByName:@"cl1"];
+    
+    //Factory patern
+    
+    CarFactory* carFactory  = [[CarFactory alloc] init];
+    
+    Car* bugatti = [carFactory create:@"bugatti" and:12345 and:engine and:factoryWheel and:YES];
+    
+    [bugatti printInfo];
     
     return YES;
 }

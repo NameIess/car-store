@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) NSString* name;
 @property (assign, nonatomic) NSInteger number;
+@property (assign, nonatomic) BOOL isNew;
 @property (strong, nonatomic) Engine* engine;   // dependencies зависимости
 @property (strong, nonatomic) Wheel* wheel;
 
